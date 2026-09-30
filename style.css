@@ -1,0 +1,126 @@
+:root {
+    /* potograhpy */
+    --heading-1: 30px;
+    --heading-2: 30px;
+    --heading-3: 30px;
+    --heading-4: 30px;
+    --heading-5: 30px;
+    --heading-6: 30px;
+    --heading-7: 30px;
+    --heading-8: 30px;
+    --heading-9: 30px;
+}
+body{
+     background-color:#fcf8f6 ;
+     color: #260f08;
+     font-family: 'Red Hat Text', sans-serif;
+}
+/* 1 მთლიანი გვერდის გაყოპა ორ სვეტად(მარცხნივ პროდუქტები,მარჯვნივ კალათა) */
+.main-layout{
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+/*მარცხენა მხარე პროდუქტები  */
+.main-layout > div:first-child {
+    flex: 2;
+}
+
+/* მარჯვენა მხარეს კალათა */
+.main-layout > div:last-child{
+    flex: 0 0 290px;
+}
+
+/* untilyty class START*/
+
+    
+.conteiner {
+    max-width: 1200px; /* 100 */
+    margin: 0 auto;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 30%;
+}
+.card button img {
+    width: 20px;
+}
+
+.category {
+    color: #ad9c97;
+    font-size: 14px;
+    margin: 30px 0 4px 0;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 4px 0 ;
+}
+
+.price {
+    color: #c73b0f;
+    font-weight: 600;
+    margin: 0;
+}
+.image-wrapper {
+    position: relative;
+}
+.image-wrapper button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: white;
+    border: 1px solid #c73b0f;
+    border-radius: 30px;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.image-wrapper > img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* კალათა */
+
+.cart {
+    background-color:white;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+}
+
+.cart h2 {
+    color: #c73b0f;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.cart img{
+    width: 120px;
+}
+
+
+.cart p {
+    color: #87635a;
+    font-size: 14px;
+}
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
